@@ -11,13 +11,12 @@
 }
 
 :root {
-    --bg-color: #1f1f21; /* Midabka Madow (Waxa loo isticmaalaa qoraalka ama box-yada dhexdiisa) */
-    --second-bg-color: #2b2b2b; /* Midab Madow oo labaad (Input fields) */
-    --text-color: #fff;       /* Midabka Qoraalka Caddaan */
-    --main-color: #a855f7;    /* Midabka Guduudka/Purple-ka */
+    --bg-color: #1f1f21; 
+    --second-bg-color: #2b2b2b;
+    --text-color: #fff;       
+    --main-color: #a855f7;    
 }
 
-/* 1. Xalka Video Background-ka: Kani wuxuu u ogolaanayaa video-ga inuu shaqeeyo */
 body {
     background: transparent; 
     color: var(--text-color);
@@ -31,42 +30,38 @@ body {
     height: 100vh;
     object-fit: cover;
     z-index: -1; 
-    /* Opacity waa laga saaray si video-gu u iftiimo oo uu tayadiisa u haysto */
 }
 
-/* 2. Navbar-ka: Transparent, Horizontal, iyo Hover-kii Unbelievable */
+/* Navbar */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 1.5rem 9%;
-    background: transparent; /* Transparent si video-gu u muuqdo */
-    backdrop-filter: blur(3px); /* Waxaa lagu daray blur yar si ay u caddaato */
+    background: transparent; 
+    backdrop-filter: blur(3px); 
     display: flex; 
     justify-content: space-between;
     align-items: center;
     z-index: 1000; 
 }
 
-/* Ka saarista Magaca (Logo-ga) - Haddii aad rabto inaad gabi ahaanba ka saarto CSS ahaan */
 .logo {
     opacity: 0; 
     pointer-events: none; 
 }
 
-/* Hubinta in Link-yada ay yihiin Horizontal */
 .nav-links {
-    display: flex; /* Horizontal */
-    list-style: none; /* Ka saarista dhibcaha */
-    margin-left: auto; /* Ku celi xagga midigta maadaama logo-gii maqan yahay */
+    display: flex;
+    list-style: none;
+    margin-left: auto;
 }
 
 .nav-links li {
     margin-left: 4rem;
 }
 
-/* Hover Effect-ka Unbelievable */
 .nav-links a {
     font-size: 1.1rem;
     color: var(--text-color);
@@ -75,7 +70,6 @@ body {
     transition: color 0.3s ease;
 }
 
-/* Line-ka ka hooseeya */
 .nav-links a::after {
     content: '';
     position: absolute;
@@ -97,7 +91,7 @@ body {
     box-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color); 
 }
 
-/* 3. Sections-ka: DHAMMAAN Sections-ka background-kooda waa transparent ama hufan */
+/* Sections */
 section {
     background: transparent; 
     padding-top: 8rem; 
@@ -114,25 +108,25 @@ section {
     padding-top: 10rem;
 }
 
-/* Social Icons: Hagaajinta Size-ka iyo Color-ka */
+/* Social Icons */
 .social-icons a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 3.5rem; /* La wayneeyay */
-    height: 3.5rem; /* La wayneeyay */
+    width: 3.5rem; 
+    height: 3.5rem; 
     background: transparent;
-    border: .2rem solid var(--text-color); /* Border-ka caddaan/text */
+    border: .2rem solid var(--text-color); 
     border-radius: 50%;
-    font-size: 1.8rem; /* Icon-ka la wayneeyay */
-    color: var(--main-color); /* Midabka Icon-ka waa Purple */
+    font-size: 1.8rem; 
+    color: var(--main-color); 
     margin: 2rem 1rem 2rem 0;
     transition: .5s ease;
 }
 
 .social-icons a:hover {
     background: var(--main-color);
-    color: var(--bg-color); /* Qoraalka wuxuu noqonayaa madow */
+    color: var(--bg-color); 
     border-color: transparent; 
     box-shadow: 0 0 15px var(--main-color), 0 0 30px var(--main-color);
 }
@@ -187,7 +181,7 @@ section {
 
 /* About Section */
 .about {
-    background: rgba(43, 43, 43, 0.5); /* Background hufan oo jilicsan si qoraalka loo arko */
+    background: rgba(43, 43, 43, 0.5); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,7 +206,7 @@ section {
     gap: 2rem;
 }
 
-/* Skills Box: Background iyo Hover Effect */
+/* Skills Box */
 .skill-box {
     background: rgba(43, 43, 43, 0.75); 
     padding: 2rem;
@@ -235,14 +229,13 @@ section {
 }
 
 /* Contact Section */
-/* Contact Section Style - Waa sidii hore si box-ka loo yareeyo */
 .contact {
     background: transparent; 
     padding: 5rem 0; 
 }
 
 .contact form {
-    max-width: 50rem; /* Box-ka waa mid yar */
+    max-width: 50rem; 
     margin: 1rem auto;
     text-align: center;
     background: rgba(31, 31, 33, 0.95); 
@@ -255,11 +248,10 @@ section {
     align-items: center; 
 }
 
-/* Kani wuxuu hubinayaa in Field-yada ay isdaba-joog yihiin (Vertical) */
 .contact form .input-box {
     display: flex;
-    flex-direction: column; /* Isbeddelka muhiimka ah: Column si ay u kala dambeeyaan */
-    gap: 1.5rem; /* Meel u dhaxaysa midkiiba */
+    flex-direction: column; 
+    gap: 1.5rem; 
     margin-bottom: 1.5rem; 
     width: 100%; 
 }
@@ -272,10 +264,8 @@ section {
     font-size: 1.1rem;
     border-radius: .4rem;
     border: 1px solid var(--main-color);
-    width: 100%; /* Hadda dhammaantood waa 100% */
+    width: 100%; 
 }
-
-/* Sharcigii hore ee 49% waa la saaray, maxaa yeelay dhamaantood waa 100% */
 
 .contact form textarea {
     width: 100%; 
@@ -283,7 +273,6 @@ section {
     resize: vertical;
 }
 
-/* Badhanka "Send Message" - Waa sidii hore oo la yareeyay */
 .contact form .btn {
     width: 20rem; 
     margin-top: 2rem;
@@ -299,30 +288,134 @@ section {
     box-shadow: 0 0 15px var(--main-color);
 }
 
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+}
 
-/* --- Media Queries --- */
-/* Media query hadda macno badan ma samaynayso maxaa yeelay qaabka desktop-ka wuxuu u eg yahay mobilka */
+/* =========================================
+   MEDIA QUERIES (Responsive Design)
+   ========================================= */
+
+/* --- 768px iyo wax ka yar (Tablets & Large Phones) --- */
 @media (max-width: 768px) {
-    .contact form {
-        padding: 2rem 1.5rem; 
-        max-width: 95%; 
+    
+    /* Yaree Padding-ka Guud */
+    section {
+        padding: 5rem 4%; /* Yaree padding-ka dhinacyada */
+        padding-top: 8rem;
+    }
+
+    /* Navbar: Yaree Padding-ka */
+    .navbar {
+        padding: 1.5rem 4%; 
     }
     
+    .nav-links li {
+        margin-left: 2rem; /* Yaree fogaanta link-yada */
+    }
+
+    /* Home Section: Ka dhig mid Vertical (Column) */
+    .home {
+        flex-direction: column; 
+        text-align: center;
+        padding-top: 8rem;
+    }
+    
+    .home-content h1 {
+        font-size: 3rem; /* Yaree h1 */
+    }
+    
+    .home-content h3 {
+        font-size: 1.5rem; /* Yaree h3 */
+    }
+
+    /* Sawirka Home */
+    .home-img img {
+        width: 250px;
+        height: 250px;
+        margin-top: 3rem;
+    }
+    
+    /* About Section: Ka dhig Vertical */
+    .about {
+        flex-direction: column;
+    }
+    
+    .about-img img {
+        width: 60vw; /* Ka dhig sawirka inuu 60% ka mid yahay shaashadda */
+        margin-bottom: 2rem;
+    }
+    
+    /* Skills Section: Ka dhig 2 Column keliya */
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Contact Form: Hagaajin */
+    .contact form {
+        padding: 2rem 1.5rem; 
+        max-width: 95%; /* Hubi inuu fadhiyo 95% mobilka */
+    }
+
     .contact form .input-box {
-        gap: 1rem; /* Inyar yaree meesha u dhaxaysa mobilka */
+        gap: 1rem; 
         margin-bottom: 1rem;
     }
     
-    .contact form .input-box input {
-        margin-bottom: 0; /* Ka saar margin-kii hore hadda waxaa qabtay gap-ka */
-    }
-
     .contact form .btn {
-        width: 80%;
-     
+        width: 80%; /* Badhanka yaree */
     }
 }
-.footer {
-     text-align: center;
-     padding: 2rem 0;
+
+/* --- 480px iyo wax ka yar (Smallest Mobiles) --- */
+@media (max-width: 480px) {
+    
+    /* Heading: Yaree cabirka ciwaanka */
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    /* Navbar: Ka dhig Vertical (ama ka saar) - Halkan waxaan ka dhigayaa mid isku soo uruuray */
+    .nav-links {
+        /* Wuxuu ku xiran yahay sida aad u rabto menu-ga hamburger-ka, laakiin hadda waxaa lagu hayaa meesha oo la yareeyay */
+        margin-left: 0;
+    }
+    .nav-links li {
+        margin-left: 1.5rem; 
+    }
+    
+    /* Home Section: Yaree size-ka qoraalka */
+    .home-content h1 {
+        font-size: 2.5rem; 
+    }
+
+    /* Sawirka Home */
+    .home-img img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    /* Social Icons */
+    .social-icons a {
+        width: 3rem; 
+        height: 3rem; 
+        font-size: 1.5rem;
+    }
+    
+    /* Skills Section: Ka dhig 1 Column keliya */
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+    
+    /* About Section: Sawirka */
+    .about-img img {
+        width: 80vw;
+    }
+
+    /* Footer */
+    .footer p {
+        font-size: 0.8rem;
+    }
 }
